@@ -16,6 +16,6 @@
  After install all dependencies of front, execute this the command ' npm run-script start' for start in dev mode watch
 
  ## Back
- !! need to Data Base first
+ :warning: need to Data Base first
  In your terminal, enter in folder back and execute the command ' npm install '
  After install all dependencies of back, execute this command ' npm run-script start:dev' for start in dev mode watch
