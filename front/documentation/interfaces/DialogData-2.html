@@ -61,7 +61,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/app/pages/dashboard/components/box-dialog-exclude-list-users/box-dialog-exclude-list-users.component.ts</code>
+            <code>src/app/pages/dashboard/components/box-dialog-edit-type/box-dialog-edit-type.component.ts</code>
         </p>
 
 
@@ -79,10 +79,10 @@
                         <td class="col-md-4">
                             <ul class="index-list">
                                 <li>
-                                        <a href="#emailIsCorrect">emailIsCorrect</a>
+                                        <a href="#alterou">alterou</a>
                                 </li>
                                 <li>
-                                        <a href="#user">user</a>
+                                        <a href="#type">type</a>
                                 </li>
                             </ul>
                         </td>
@@ -99,13 +99,13 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
-                                        <a name="emailIsCorrect"></a>
-                                        <span class="name"><b>emailIsCorrect</b><a href="#emailIsCorrect"><span class="icon ion-ios-link"></span></a></span>
+                                        <a name="alterou"></a>
+                                        <span class="name"><b>alterou</b><a href="#alterou"><span class="icon ion-ios-link"></span></a></span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <code>emailIsCorrect:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                        <code>alterou:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
 </code>
                                     </td>
                                 </tr>
@@ -128,24 +128,18 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
-                                        <a name="user"></a>
-                                        <span class="name"><b>user</b><a href="#user"><span class="icon ion-ios-link"></span></a></span>
+                                        <a name="type"></a>
+                                        <span class="name"><b>type</b><a href="#type"><span class="icon ion-ios-link"></span></a></span>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <code>user:         <code><a href="../classes/User.html" target="_self" >User</a></code>
+                                        <code>type:     <code></code>
 </code>
                                     </td>
                                 </tr>
 
 
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <i>Type : </i>        <code><a href="../classes/User.html" target="_self" >User</a></code>
-
-                                        </td>
-                                    </tr>
 
 
 
@@ -161,55 +155,49 @@
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Inject, OnInit } from &#x27;@angular/core&#x27;;
 import { FormControl, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
 import { MatDialogRef, MAT_DIALOG_DATA } from &#x27;@angular/material/dialog&#x27;;
-import { MatSnackBar } from &#x27;@angular/material/snack-bar&#x27;;
 import { User } from &#x27;../../../../@core/data/user.model&#x27;;
 
 export interface DialogData {
-  user:User
-  emailIsCorrect: boolean
+  type
+  alterou: boolean
 }
 @Component({
-  selector: &#x27;app-box-dialog-exclude-list-users&#x27;,
-  templateUrl: &#x27;./box-dialog-exclude-list-users.component.html&#x27;,
-  styleUrls: [&#x27;./box-dialog-exclude-list-users.component.scss&#x27;]
+  selector: &#x27;app-box-dialog-edit-type&#x27;,
+  templateUrl: &#x27;./box-dialog-edit-type.component.html&#x27;,
+  styleUrls: [&#x27;./box-dialog-edit-type.component.scss&#x27;]
 })
-export class BoxDialogExcludeListUsersComponent implements OnInit {
-
-  public user:User
+export class BoxDialogEditTypeComponent implements OnInit {
+  public type
   public form: FormGroup
-  constructor(private _snackBar:MatSnackBar,
-    public dialogRef: MatDialogRef&lt;BoxDialogExcludeListUsersComponent&gt;,
+  constructor(
+    public dialogRef: MatDialogRef&lt;BoxDialogEditTypeComponent&gt;,
     @Inject(MAT_DIALOG_DATA) public data: DialogData
     ) {
-      this.user &#x3D; this.data.user
+    this.type &#x3D; this.data.type
     }
-    ngOnInit(): void {
-      this.form &#x3D; new FormGroup({
-        email: new FormControl(&#x27;&#x27;,[Validators.pattern(&quot;^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$&quot;),Validators.required]),
-      })
-    }
+
   onNoClick(): void {
     this.dialogRef.close();
   }
   alter(){
-    console.log(this.form.valid)
-      if(this.form.get(&#x27;email&#x27;).valid){
-        if(this.form.value.email &#x3D;&#x3D;&#x3D; this.user.email){
-          this.data.emailIsCorrect &#x3D; true 
-        }else{
-          this.openSnackBar(&#x27;To delete the user, enter the user\&#x27;s email&#x27;,&#x27;Close&#x27;)
-        }
-      }else{
-        this.openSnackBar(&#x27;Email is invalid!&#x27;,&#x27;Close&#x27;)
+      if(this.form.get(&#x27;description&#x27;).valid &amp;&amp; this.form.get(&#x27;active&#x27;).valid ){
+          if(
+             this.form.value.description !&#x3D; this.data.type.description ||
+             this.form.value.active !&#x3D; this.data.type.active 
+            ){
+            this.data.alterou &#x3D; true
+            this.data.type.description &#x3D; this.form.value.description
+            this.data.type.active &#x3D; this.form.value.active
+          }
       }
 
   }
-  openSnackBar(message: string, action: string) {
-    this._snackBar.open(message, action, {
-      duration: 4000,
-     horizontalPosition:&#x27;center&#x27;,
-     verticalPosition:&#x27;top&#x27;
-    });
+  ngOnInit(): void {
+    console.log(this.type)
+    this.form &#x3D; new FormGroup({
+      description: new FormControl(this.type.description,[Validators.required]),
+      active: new FormControl(this.type.active,[Validators.required]),
+    })
   }
 
 

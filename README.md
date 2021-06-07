@@ -23,6 +23,6 @@
 
 ## DOCUMENTATION
  ### :warning: need to install dependencies first
- In your terminal, enter in folder front or back and execute the command ' npm run-script Documentation '<br />
+ In your terminal, enter in folder front or back and execute the command ' npm run-script documentation '<br />
  each one with your own documentation!<br />
- this will create a server with documentarition of each one
+ this will create a server with documentation

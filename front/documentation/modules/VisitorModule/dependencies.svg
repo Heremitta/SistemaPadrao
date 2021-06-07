@@ -24,67 +24,67 @@
 <title>cluster_VisitorModule</title>
 <polygon fill="none" stroke="black" stroke-dasharray="1,5" points="8,-70 8,-195 578,-195 578,-70 8,-70"/>
 </g>
-<g id="clust2" class="cluster">
-<title>cluster_VisitorModule_declarations</title>
-<polygon fill="none" stroke="black" points="300,-78 300,-130 570,-130 570,-78 300,-78"/>
-</g>
 <g id="clust5" class="cluster">
 <title>cluster_VisitorModule_imports</title>
-<polygon fill="none" stroke="black" points="16,-78 16,-130 292,-130 292,-78 16,-78"/>
+<polygon fill="none" stroke="black" points="294,-78 294,-130 570,-130 570,-78 294,-78"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_VisitorModule_declarations</title>
+<polygon fill="none" stroke="black" points="16,-78 16,-130 286,-130 286,-78 16,-78"/>
 </g>
 <!-- HomeComponent -->
 <g id="node1" class="node">
 <title>HomeComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="561.55,-122 446.45,-122 446.45,-86 561.55,-86 561.55,-122"/>
-<text text-anchor="middle" x="504" y="-99.8" font-family="Times,serif" font-size="14.00">HomeComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="277.55,-122 162.45,-122 162.45,-86 277.55,-86 277.55,-122"/>
+<text text-anchor="middle" x="220" y="-99.8" font-family="Times,serif" font-size="14.00">HomeComponent</text>
 </g>
 <!-- VisitorModule -->
 <g id="node3" class="node">
 <title>VisitorModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="350.43,-187 347.43,-191 326.43,-191 323.43,-187 251.57,-187 251.57,-151 350.43,-151 350.43,-187"/>
-<text text-anchor="middle" x="301" y="-164.8" font-family="Times,serif" font-size="14.00">VisitorModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="346.43,-187 343.43,-191 322.43,-191 319.43,-187 247.57,-187 247.57,-151 346.43,-151 346.43,-187"/>
+<text text-anchor="middle" x="297" y="-164.8" font-family="Times,serif" font-size="14.00">VisitorModule</text>
 </g>
 <!-- HomeComponent&#45;&gt;VisitorModule -->
 <g id="edge1" class="edge">
 <title>HomeComponent&#45;&gt;VisitorModule</title>
-<path fill="none" stroke="black" d="M504,-122.11C504,-141.34 504,-169 504,-169 504,-169 360.4,-169 360.4,-169"/>
-<polygon fill="black" stroke="black" points="360.4,-165.5 350.4,-169 360.4,-172.5 360.4,-165.5"/>
+<path fill="none" stroke="black" d="M262.78,-122.11C262.78,-122.11 262.78,-140.99 262.78,-140.99"/>
+<polygon fill="black" stroke="black" points="259.28,-140.99 262.78,-150.99 266.28,-140.99 259.28,-140.99"/>
 </g>
 <!-- VisitorComponent -->
 <g id="node2" class="node">
 <title>VisitorComponent</title>
-<polygon fill="#ffffb3" stroke="black" points="428.22,-122 307.78,-122 307.78,-86 428.22,-86 428.22,-122"/>
-<text text-anchor="middle" x="368" y="-99.8" font-family="Times,serif" font-size="14.00">VisitorComponent</text>
+<polygon fill="#ffffb3" stroke="black" points="144.22,-122 23.78,-122 23.78,-86 144.22,-86 144.22,-122"/>
+<text text-anchor="middle" x="84" y="-99.8" font-family="Times,serif" font-size="14.00">VisitorComponent</text>
 </g>
 <!-- VisitorComponent&#45;&gt;VisitorModule -->
 <g id="edge2" class="edge">
 <title>VisitorComponent&#45;&gt;VisitorModule</title>
-<path fill="none" stroke="black" d="M329.05,-122.11C329.05,-122.11 329.05,-140.99 329.05,-140.99"/>
-<polygon fill="black" stroke="black" points="325.55,-140.99 329.05,-150.99 332.55,-140.99 325.55,-140.99"/>
+<path fill="none" stroke="black" d="M84,-122.11C84,-141.34 84,-169 84,-169 84,-169 237.6,-169 237.6,-169"/>
+<polygon fill="black" stroke="black" points="237.6,-172.5 247.6,-169 237.6,-165.5 237.6,-172.5"/>
 </g>
 <!-- ThemeModule -->
 <g id="node4" class="node">
 <title>ThemeModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="284.42,-122 281.42,-126 260.42,-126 257.42,-122 185.58,-122 185.58,-86 284.42,-86 284.42,-122"/>
-<text text-anchor="middle" x="235" y="-99.8" font-family="Times,serif" font-size="14.00">ThemeModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="562.42,-122 559.42,-126 538.42,-126 535.42,-122 463.58,-122 463.58,-86 562.42,-86 562.42,-122"/>
+<text text-anchor="middle" x="513" y="-99.8" font-family="Times,serif" font-size="14.00">ThemeModule</text>
 </g>
 <!-- ThemeModule&#45;&gt;VisitorModule -->
 <g id="edge3" class="edge">
 <title>ThemeModule&#45;&gt;VisitorModule</title>
-<path fill="none" stroke="black" d="M268,-122.11C268,-122.11 268,-140.99 268,-140.99"/>
-<polygon fill="black" stroke="black" points="264.5,-140.99 268,-150.99 271.5,-140.99 264.5,-140.99"/>
+<path fill="none" stroke="black" d="M513,-122.11C513,-141.34 513,-169 513,-169 513,-169 356.28,-169 356.28,-169"/>
+<polygon fill="black" stroke="black" points="356.28,-165.5 346.28,-169 356.28,-172.5 356.28,-165.5"/>
 </g>
 <!-- VisitorRoutingModule -->
 <g id="node5" class="node">
 <title>VisitorRoutingModule</title>
-<polygon fill="#8dd3c7" stroke="black" points="167.55,-122 164.55,-126 143.55,-126 140.55,-122 24.45,-122 24.45,-86 167.55,-86 167.55,-122"/>
-<text text-anchor="middle" x="96" y="-99.8" font-family="Times,serif" font-size="14.00">VisitorRoutingModule</text>
+<polygon fill="#8dd3c7" stroke="black" points="445.55,-122 442.55,-126 421.55,-126 418.55,-122 302.45,-122 302.45,-86 445.55,-86 445.55,-122"/>
+<text text-anchor="middle" x="374" y="-99.8" font-family="Times,serif" font-size="14.00">VisitorRoutingModule</text>
 </g>
 <!-- VisitorRoutingModule&#45;&gt;VisitorModule -->
 <g id="edge4" class="edge">
 <title>VisitorRoutingModule&#45;&gt;VisitorModule</title>
-<path fill="none" stroke="black" d="M96,-122.11C96,-141.34 96,-169 96,-169 96,-169 241.64,-169 241.64,-169"/>
-<polygon fill="black" stroke="black" points="241.64,-172.5 251.64,-169 241.64,-165.5 241.64,-172.5"/>
+<path fill="none" stroke="black" d="M324.22,-122.11C324.22,-122.11 324.22,-140.99 324.22,-140.99"/>
+<polygon fill="black" stroke="black" points="320.72,-140.99 324.22,-150.99 327.72,-140.99 320.72,-140.99"/>
 </g>
 </g>
 </svg>
