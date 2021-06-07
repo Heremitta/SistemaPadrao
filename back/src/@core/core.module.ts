@@ -10,18 +10,18 @@ const PROVIDER:Provider[] = [
 const IMPORTS =[
     ConfigModule.forRoot(),
     SequelizeModule.forRoot({
-        dialect: 'mysql',
-        host: 'localhost',
-        port: 3306,
-        username: process.env.USUARIO_BANCO_DADOS,
-        password:
-          process.env.SENHA_BANCO_DADOS == 'root'
-            ? ''
-            : process.env.SENHA_BANCO_DADOS,
-        database: 'maxxidata',
-        autoLoadModels: true,
-        synchronize: true,
-      })
+      dialect: 'mysql',
+      host: 'localhost',
+      port: 3306,
+      username: process.env.USUARIO_BANCO_DADOS,
+      password:
+        process.env.SENHA_BANCO_DADOS == 'root'
+          ? ''
+          : process.env.SENHA_BANCO_DADOS,
+      database: process.env.DATA_BASE,
+      autoLoadModels: true,
+      synchronize: true,
+    })
 ]
 @Module({
     imports: [],
