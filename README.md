@@ -1,5 +1,6 @@
 # SistemaPadrao
- sistema em Angular e NestJs
+ Sistem for start new projects with this tecnologies. <br />
+ Contain api for auth, list users and user's type.
 
 ## Commands
  all comands to init this project is in package.json <br />
